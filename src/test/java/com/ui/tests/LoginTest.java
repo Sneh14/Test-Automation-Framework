@@ -26,7 +26,6 @@ public class LoginTest extends TestBase {
 		assertEquals(homePage.goToLoginInPage().doLoginWith(user.getEmail(), user.getPassword()).getUserName(), "Aaa bbb");
 	}
 	
-	
 	@Test(description = "Verifies if valid user is able to login into the application", groups = {"e2e","Sanity"},
 			dataProviderClass = com.ui.dataproviders.loginDataProvider.class, dataProvider = "LoginTestCSVDataProvider" , retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
 	public void loginCSVTest(User user) {

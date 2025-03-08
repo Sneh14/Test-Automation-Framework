@@ -42,12 +42,12 @@ public class TestBase {
 		return homePage;
 	}
 	
-	@AfterMethod
-	public void tearDown() {
-		if(isLambdaTest) {
-			LambdaTestUtility.quitSession();
-		}else {
-		homePage.getDriver().quit();
-		}
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		if(isLambdaTest) {
+//			LambdaTestUtility.quitSession();
+//		}else {
+//		homePage.getDriver().quit();
+//		}
+//	}
 }

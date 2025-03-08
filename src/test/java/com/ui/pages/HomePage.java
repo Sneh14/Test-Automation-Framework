@@ -14,8 +14,8 @@ public final class HomePage extends BrowserUtility{
 
 	public HomePage(Browser browserName, boolean isHeadless) {
 		super(browserName, isHeadless);
-		//goToWebsite(readProperty(QA, "URL"));
-		goToWebsite(JSONUtility.readJSON(QA).getUrl());
+		goToWebsite(readProperty(QA, "URL"));
+		//goToWebsite(JSONUtility.readJSON(QA).getUrl());
 	}
 	
 	public HomePage(WebDriver driver) {
